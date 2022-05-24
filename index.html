@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+        
     <title>Resume - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="vendor/bootstrap/css/botton.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -24,12 +24,12 @@
     <link href="css/resume.min.css" rel="stylesheet">
 
   </head>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none"><img class=" width="200px" height="100px" rounded-circle mx-auto mb-2" src="img/profile.jpg" alt=""></span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
@@ -59,7 +59,7 @@
         </ul>
       </div>
     </nav>
-
+         
     <div class="container-fluid p-0">
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
@@ -263,8 +263,8 @@
               <i class="fa-li fa fa-trophy text-warning"></i>
               <br>作品名稱: 旅遊服務網 Demo
               <br>工具使用: HTML、CSS、bootstrap 5、JavaScript
-              <br>網頁連結: https://kent-fang.github.io/Haiiw.github.io/
-              <br>GitHub連結: https://github.com/Kent-fang/Haiiw.github.io
+              <br>網頁連結:<a href="https://kent-fang.github.io/Haiiw.github.io/">https://kent-fang.github.io/Haiiw.github.io/</a>
+              <br>GitHub連結:<a href="https://github.com/Kent-fang/Haiiw.github.io">https://github.com/Kent-fang/Haiiw.github.io</a>
               </li>
               <p></p>
             <li>
@@ -273,7 +273,7 @@
               </li>
               <br>作品名稱: 手部追蹤辨識
               <br>工具使用: Python、PyCharm、Open CV、Mediapipe              
-              <br>GitHub連結: https://github.com/Kent-fang/handtracking
+              <br>GitHub連結:<a href="https://github.com/Kent-fang/handtracking">https://github.com/Kent-fang/handtracking</a>
               <p></p>
             <li>
               <img src="img/圖片3.png" class="figure-img img-fluid rounded" alt="">
@@ -281,7 +281,7 @@
               </li>
               <br>作品名稱: Line  天氣小助理
               <br>工具使用: Python、PyCharm、LINE Notify、氣象資料API、HEROKU             
-              <br>GitHub連結: https://github.com/Kent-fang/weatherLInebot
+              <br>GitHub連結:<a href="https://github.com/Kent-fang/weatherLInebot">https://github.com/Kent-fang/weatherLInebot</a>
               <p></p>
             <li>
               <img src="img/圖片4.png" class="figure-img img-fluid rounded" alt="">
@@ -289,15 +289,29 @@
               </li>
               <br>作品名稱: 簡易點餐系統
               <br>工具使用: Python、PyCharm、EasyGUI             
-              <br>GitHub連結: https://github.com/Kent-fang/order
+              <br>GitHub連結:<a href="https://github.com/Kent-fang/order">https://github.com/Kent-fang/order</a>
             <li>
-                                   
+              
           </ul>
         </div>
       </section>
 
     </div>
-
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+    $(function(){
+      $('#BackTop').click(function(){ 
+        $('html,body').animate({scrollTop:0}, 333);
+      });
+      $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300 ){
+          $('#BackTop').fadeIn(222);
+        } else {
+          $('#BackTop').stop().fadeOut(222);
+        }
+      }).scroll();
+    });
+    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
